@@ -6,7 +6,7 @@ pipeline {
             timeout(time: 1, unit: 'HOURS')
             timestamps()
      }
-     triggers { cron('* * * * *') }
+     triggers { pollSCM('* * * * *') }
     stages {
         
         stage('build'){
