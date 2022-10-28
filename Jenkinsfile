@@ -13,7 +13,7 @@ pipeline {
         }
         stage('github test'){
            steps{
-               git branch: 'main', credentialsId: 'jenkins-ssh-key', url: 'git@github.com:malleshdevops/maven-project.git'
+               git branch: 'main', credentialsId: 'jenkins-ssh-key', url: 'git@github.com:malleshdevops/mymaven-project.git'
            }
         }
         stage('maven build'){
