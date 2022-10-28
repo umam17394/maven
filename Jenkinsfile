@@ -11,11 +11,11 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        stage('github test'){
+       /* stage('github test'){
            steps{
                git branch: 'main', credentialsId: 'jenkins-ssh-key', url: 'git@github.com:malleshdevops/mymaven-project.git'
            }
-        }
+        }*/
         stage('maven build'){
             steps{
                 sh 'mvn clean package'
